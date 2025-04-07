@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  pgpt: &pgpt
+    build:
+      context: ../../
+      dockerfile: ./docker/local/pgpt/Dockerfile
+    volumes:
+      - ../../:/app
+    environment:
+      - DOCKER_DEV_ENV=none
+    env_file:
+      - pgpt/.env
+    command: /start.sh
+
+  pgptvscode:
+    <<: *pgpt
+    environment:
+      - DOCKER_DEV_ENV=vscode

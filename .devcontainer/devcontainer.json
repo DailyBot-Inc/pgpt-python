@@ -1,0 +1,35 @@
+{
+	"name": "(Backend) PGPT",
+	"dockerComposeFile": "../docker/local/docker-compose.yml",
+	"service": "pgptvscode",
+	"workspaceFolder": "/app",
+	"runServices": ["pgptvscode"],
+	"customizations": {
+    "settings": {
+			"terminal.integrated.shell.linux": "/bin/bash",
+			"python.pythonPath": "/usr/local/bin/python",
+			"python.linting.enabled": true,
+			"python.linting.pylintEnabled": true,
+			"python.linting.pylintPath": "/usr/local/bin/pylint"
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+				"ms-python.flake8",
+				"ms-python.vscode-pylance",
+				"ms-python.mypy-type-checker",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"eamodio.gitlens",
+				"shardulm94.trailing-spaces",
+				"oderwat.indent-rainbow",
+				"cameron.vscode-pytest",
+				"streetsidesoftware.code-spell-checker",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+        "ms-azuretools.vscode-docker",
+				"tamasfe.even-better-toml",
+				"ms-python.pylint"
+      ]
+    }
+  }
+}
