@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pgpt_python"
-version = "0.1.4"
+version = "0.1.2"
 description = "PrivateGPT Python SDK"
 authors = ["imartinez <ivanmartit@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
 httpx = ">=0.28.1"
-pydantic = ">=2.11.2"
+pydantic = ">=2.11.0"
 
 
 [build-system]
